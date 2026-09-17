@@ -435,7 +435,7 @@
     <div class="controls-right" id="mission-controls">
       <input type="text" id="search-bar" class="search-box" placeholder="Search missions..." oninput="searchMissions()">
       <button class="btn" onclick="openModal()">+ Add mission</button>
-      <button class="btn btn-outline" onclick="fetchMissions()">Refresh</button>
+      <button class="btn btn-outline" onclick="exportMissions()" title="Download the current mission list as JSON to commit back to the repo">Export JSON</button>
     </div>
   </div>
 
@@ -586,9 +586,13 @@
   }
 
   /* ---------- Missions ---------- */
+  /* Public site: mission data is read straight from the committed eve_missions.json
+     next to this file. There is no backend — this is a static, read-only page for
+     visitors. Editing (below) only changes the in-memory copy for this browser tab;
+     use "Export JSON" to download your changes and commit them back to the repo. */
   async function fetchMissions() {
     try {
-      const res = await fetch('/api/eve/missions');
+      const res = await fetch('./eve_missions.json', { cache: 'no-store' });
       if (res.ok) {
         missions = await res.json();
         missions = missions.map(m => ({
@@ -598,12 +602,26 @@
           loot: m.loot || ''
         }));
         searchMissions();
+      } else {
+        throw new Error('HTTP ' + res.status);
       }
     } catch (e) {
-      console.error("Error fetching missions:", e);
+      console.error("Error loading missions:", e);
       document.getElementById('missions-tbody').innerHTML =
-        `<tr><td colspan="6" class="empty-state">Couldn't load missions. Check the connection and try Refresh.</td></tr>`;
+        `<tr><td colspan="6" class="empty-state">Couldn't load eve_missions.json. Make sure it's in the same folder as this page.</td></tr>`;
     }
+  }
+
+  function exportMissions() {
+    const blob = new Blob([JSON.stringify(missions, null, 4)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'eve_missions.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   }
 
   function searchMissions() {
@@ -742,7 +760,7 @@
     document.getElementById('modal-overlay').classList.remove('active');
   }
 
-  async function saveMission() {
+  function saveMission() {
     const id = document.getElementById('mission-id').value;
     const name = document.getElementById('mission-name').value.trim();
     const color = document.getElementById('mission-color').value;
@@ -758,57 +776,24 @@
       return;
     }
 
-    let updatedMissions = [...missions];
-
     if (id) {
-      const index = updatedMissions.findIndex(m => m.id === id);
+      const index = missions.findIndex(m => m.id === id);
       if (index !== -1) {
-        updatedMissions[index] = { id, name, color, guide, tank, loot, ammo, ab };
+        missions[index] = { id, name, color, guide, tank, loot, ammo, ab };
       }
     } else {
-      updatedMissions.push({ id: crypto.randomUUID(), name, color, guide, tank, loot, ammo, ab });
+      missions.push({ id: crypto.randomUUID(), name, color, guide, tank, loot, ammo, ab });
     }
 
-    try {
-      const res = await fetch('/api/eve/missions', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(updatedMissions)
-      });
-
-      if (res.ok) {
-        missions = updatedMissions;
-        searchMissions();
-        closeModal();
-      } else {
-        alert('Failed to save mission. Check console for details.');
-      }
-    } catch (e) {
-      console.error("Error saving mission:", e);
-      alert('Error saving mission.');
-    }
+    searchMissions();
+    closeModal();
   }
 
-  async function deleteMission(id) {
-    if (!confirm('Are you sure you want to delete this mission?')) return;
-
-    const updatedMissions = missions.filter(m => m.id !== id);
-
-    try {
-      const res = await fetch('/api/eve/missions', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(updatedMissions)
-      });
-
-      if (res.ok) {
-        missions = updatedMissions;
-        expandedIds.delete(id);
-        searchMissions();
-      }
-    } catch (e) {
-      console.error("Error deleting mission:", e);
-    }
+  function deleteMission(id) {
+    if (!confirm('Remove this mission from your working copy? (Doesn\'t affect the live site until you export + commit.)')) return;
+    missions = missions.filter(m => m.id !== id);
+    expandedIds.delete(id);
+    searchMissions();
   }
 
   function editMission(id) {
