@@ -1,0 +1,143 @@
+[
+    {
+        "id": "1",
+        "name": "Enemies abound",
+        "color": "bg-green",
+        "guide": "",
+        "ammo": [],
+        "ab": "yes",
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "2",
+        "name": "Silence the informant",
+        "color": "bg-white",
+        "guide": "drop mtu at start, kill elite drones for loot",
+        "ammo": [
+            "em",
+            "kin"
+        ],
+        "ab": "no",
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "3",
+        "name": "Angel extravaganza",
+        "color": "bg-green",
+        "guide": "Pocket 1: Kill the Scanner Post, then kill the initial ships and wave 1.\nPocket 2: Kill all ships.\nPocket 3: Kill the Battleship, ignore everything else.\nPocket 4: Kill the Silo (bookmark the can) and the Radio Telescope, then kill all ships.\nPocket 5: Kill the Battleships, starting with the highest bounty of each group to trigger spawns, kill Tiogo Kargaz you're done.",
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "4",
+        "name": "gone berserk",
+        "color": "bg-yellow",
+        "guide": "Kill everything",
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "5",
+        "name": "Damsel in distress",
+        "color": "bg-green",
+        "guide": "Destroy casino, kill rest, loot named npc destroy station",
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "6",
+        "name": "The Right Hand of Zazzmatazz",
+        "color": "bg-green",
+        "guide": "Blitz: Kill Zor, destroy the Outpost Headquarters and warp out.",
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "7",
+        "name": "The assault",
+        "color": "bg-yellow",
+        "guide": "Skip first gate, kill everything in second",
+        "ammo": [
+            "kin"
+        ],
+        "ab": "yes",
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "8",
+        "name": "The Rogue Slave Trader FAST",
+        "color": "bg-blue",
+        "guide": "destroy slave pen, take prisoner port out",
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "9",
+        "name": "Stop the Thief FAST",
+        "color": "bg-blue",
+        "guide": "Align home, Kill close overlord, kill shadow port out",
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "10",
+        "name": "Cargo delivery FAST",
+        "color": "bg-blue",
+        "guide": "take garmuri, literally just get item no fighting",
+        "ammo": [],
+        "ab": "yes",
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "11",
+        "name": "Pirate Slaughter",
+        "color": "bg-white",
+        "guide": "",
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "12",
+        "name": "unathorized mil presence",
+        "color": "bg-white",
+        "guide": "Skip first gate, inside gate destroy transport and its group at spaceship wreck",
+        "ammo": [
+            "em"
+        ],
+        "ab": "yes",
+        "tank": "",
+        "loot": ""
+    }
+]
