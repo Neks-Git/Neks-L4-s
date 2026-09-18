@@ -1,221 +1,2919 @@
 [
     {
-        "id": "1", "name": "Enemies abound", "color": "bg-green", "guide": "",
-        "resist": ["x"], "ammo": [], "ab": "yes", "tags": [], "profit": "",
-        "choice": true, "tank": "", "loot": ""
+        "id": "1",
+        "name": "Enemies abound",
+        "color": "bg-green",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "yes",
+        "tags": [],
+        "profit": "",
+        "choice": true,
+        "tank": "",
+        "loot": ""
     },
     {
-        "id": "2", "name": "Silence the informant", "color": "bg-white",
+        "id": "2",
+        "name": "Silence the informant",
+        "color": "bg-white",
         "guide": "drop mtu at start, kill elite drones for loot",
-        "resist": ["x"], "ammo": ["em","kin"], "ab": "no", "tags": [], "profit": "",
-        "choice": false, "tank": "", "loot": ""
+        "resist": [],
+        "ammo": [
+            "em",
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
     },
     {
-        "id": "3", "name": "Angel extravaganza", "color": "bg-green",
+        "id": "3",
+        "name": "Angel extravaganza",
+        "color": "bg-green",
         "guide": "Pocket 1: Kill the Scanner Post, then kill the initial ships and wave 1.\nPocket 2: Kill all ships.\nPocket 3: Kill the Battleship, ignore everything else.\nPocket 4: Kill the Silo (bookmark the can) and the Radio Telescope, then kill all ships.\nPocket 5: Kill the Battleships, starting with the highest bounty of each group to trigger spawns, kill Tiogo Kargaz you're done.",
-        "resist": ["x"], "ammo": ["exp"], "ab": "no", "tags": [], "profit": "",
-        "choice": true, "tank": "", "loot": ""
+        "resist": [],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": true,
+        "tank": "",
+        "loot": ""
     },
     {
-        "id": "4", "name": "gone berserk", "color": "bg-yellow", "guide": "Kill everything",
-        "resist": ["x"], "ammo": ["kin"], "ab": "no", "tags": [], "profit": "",
-        "choice": false, "tank": "", "loot": ""
+        "id": "4",
+        "name": "gone berserk",
+        "color": "bg-yellow",
+        "guide": "Kill everything",
+        "resist": [],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
     },
     {
-        "id": "5", "name": "Damsel in distress", "color": "bg-green",
+        "id": "5",
+        "name": "Damsel in distress",
+        "color": "bg-green",
         "guide": "Destroy casino, kill rest, loot named npc destroy station",
-        "resist": ["x"], "ammo": ["kin"], "ab": "no", "tags": [], "profit": "",
-        "choice": true, "tank": "", "loot": ""
+        "resist": [],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": true,
+        "tank": "",
+        "loot": ""
     },
     {
-        "id": "6", "name": "The Right Hand of Zazzmatazz", "color": "bg-green",
+        "id": "6",
+        "name": "The Right Hand of Zazzmatazz",
+        "color": "bg-green",
         "guide": "Blitz: Kill Zor, destroy the Outpost Headquarters and warp out.",
-        "resist": ["x"], "ammo": ["kin"], "ab": "no", "tags": ["BLITZ"], "profit": "",
-        "choice": true, "tank": "", "loot": ""
+        "resist": [],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [
+            "BLITZ"
+        ],
+        "profit": "",
+        "choice": true,
+        "tank": "",
+        "loot": ""
     },
     {
-        "id": "7", "name": "The assault", "color": "bg-yellow",
+        "id": "7",
+        "name": "The assault",
+        "color": "bg-yellow",
         "guide": "Skip first gate, kill everything in second",
-        "resist": ["x"], "ammo": ["kin"], "ab": "yes", "tags": [], "profit": "",
-        "choice": false, "tank": "", "loot": ""
+        "resist": [],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "yes",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
     },
     {
-        "id": "8", "name": "The Rogue Slave Trader FAST", "color": "bg-blue",
+        "id": "8",
+        "name": "The Rogue Slave Trader FAST",
+        "color": "bg-blue",
         "guide": "destroy slave pen, take prisoner port out",
-        "resist": ["x"], "ammo": ["em"], "ab": "no", "tags": ["FAST"], "profit": "",
-        "choice": true, "tank": "", "loot": ""
+        "resist": [],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [
+            "FAST"
+        ],
+        "profit": "",
+        "choice": true,
+        "tank": "",
+        "loot": ""
     },
     {
-        "id": "9", "name": "Stop the Thief FAST", "color": "bg-blue",
+        "id": "9",
+        "name": "Stop the Thief FAST",
+        "color": "bg-blue",
         "guide": "Align home, Kill close overlord, kill shadow port out",
-        "resist": ["x"], "ammo": ["exp"], "ab": "no", "tags": ["FAST"], "profit": "",
-        "choice": true, "tank": "", "loot": ""
+        "resist": [],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [
+            "FAST"
+        ],
+        "profit": "",
+        "choice": true,
+        "tank": "",
+        "loot": ""
     },
     {
-        "id": "10", "name": "Cargo delivery FAST", "color": "bg-blue",
+        "id": "10",
+        "name": "Cargo delivery FAST",
+        "color": "bg-blue",
         "guide": "take garmuri, literally just get item no fighting",
-        "resist": ["x"], "ammo": [], "ab": "yes", "tags": ["FAST"], "profit": "",
-        "choice": true, "tank": "", "loot": ""
+        "resist": [],
+        "ammo": [],
+        "ab": "yes",
+        "tags": [
+            "FAST"
+        ],
+        "profit": "",
+        "choice": true,
+        "tank": "",
+        "loot": ""
     },
     {
-        "id": "11", "name": "Pirate Slaughter", "color": "bg-white", "guide": "",
-        "resist": ["x"], "ammo": ["kin"], "ab": "no", "tags": [], "profit": "",
-        "choice": false, "tank": "", "loot": ""
+        "id": "11",
+        "name": "Pirate Slaughter",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
     },
     {
-        "id": "12", "name": "unathorized mil presence", "color": "bg-white",
+        "id": "12",
+        "name": "unathorized mil presence",
+        "color": "bg-white",
         "guide": "Skip first gate, inside gate destroy transport and its group at spaceship wreck",
-        "resist": ["x"], "ammo": ["em"], "ab": "yes", "tags": [], "profit": "",
-        "choice": false, "tank": "", "loot": ""
+        "resist": [],
+        "ammo": [
+            "em"
+        ],
+        "ab": "yes",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
     },
-
-    { "id": "13",  "name": "Amarr Excavators", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "14",  "name": "Ambush the Convoy (Blood Raiders)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "15",  "name": "Ambush the Convoy (Serpentis)", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "16",  "name": "An Advantageous Catastrophe", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "17",  "name": "The Angel Cartel Spies", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "18",  "name": "Angel Extravaganza", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "19",  "name": "The Anomaly", "color": "bg-white", "guide": "", "resist": ["em"], "ammo": ["em"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "20",  "name": "Are You Receiving?", "color": "bg-white", "guide": "", "resist": ["em","kin","exp","therm"], "ammo": ["em","kin","exp","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "21",  "name": "The Assault (Guristas Pirates)", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "22",  "name": "The Assault (Minmatar Republic)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "23",  "name": "The Assault (Serpentis)", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "24",  "name": "Attack of the Drones", "color": "bg-white", "guide": "", "resist": ["em"], "ammo": ["em"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "25",  "name": "The Blockade (Angel Cartel)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "26",  "name": "The Blockade (Blood Raiders)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "27",  "name": "The Blockade (DED)", "color": "bg-white", "guide": "", "resist": ["x"], "ammo": [], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "28",  "name": "The Blockade (Sansha's Nation)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "29",  "name": "The Blockade (Serpentis)", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "30",  "name": "The Blood of Angry Men", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "31",  "name": "Blood Farm", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "32",  "name": "The Blood Raider Spies", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "33",  "name": "Buzz Kill", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "34",  "name": "Cargo Delivery (Blood Raiders)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "35",  "name": "Cargo Delivery (Sansha's Nation)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "36",  "name": "Cargo Delivery (Serpentis)", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "37",  "name": "Covering your Tracks", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "38",  "name": "Crowd Control", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "39",  "name": "The Damsel in Distress", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "40",  "name": "Desperate Maneuvers", "color": "bg-white", "guide": "", "resist": ["em","kin","therm"], "ammo": ["em","kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "41",  "name": "Diplomatic Incident", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "42",  "name": "Dissidents", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "43",  "name": "Downing The Slavers (2 of 2) (Sansha's Nation)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "44",  "name": "Dread Pirate Scarlet", "color": "bg-blue", "guide": "Take gate key, skip every room, all gates are open. last room kill named npc, done", "resist": ["em","kin","exp","therm"], "ammo": ["em","kin","exp","therm"], "ab": "yes", "tags": ["BLITZ","FAST"], "profit": "", "choice": true, "tank": "", "loot": "" },
-    { "id": "45",  "name": "Duo of Death (Angel Cartel)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "46",  "name": "Duo of Death (Blood Raiders)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "47",  "name": "Duo of Death (Guristas Pirates)", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "48",  "name": "Duo of Death (Sansha's Nation)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "49",  "name": "Duo of Death (Serpentis)", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "50",  "name": "An End to Eavesdropping", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "51",  "name": "Enemies Abound", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "52",  "name": "Evolution", "color": "bg-white", "guide": "", "resist": ["em"], "ammo": ["em"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "53",  "name": "Exploited Sensitivities", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "54",  "name": "Extract The Renegade", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "55",  "name": "Federal Confidence", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "56",  "name": "Feeding Frenzy", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "57",  "name": "Foil The Military Preparations (Caldari)", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "58",  "name": "Foil The Military Preparations (Gallente Federation)", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "59",  "name": "Forgotten Outpost", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "60",  "name": "Gate to Nowhere", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "61",  "name": "Gone Berserk", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "62",  "name": "Guristas Extravaganza", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "63",  "name": "The Guristas Spies", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "64",  "name": "Halt the Invasion (Amarr)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "65",  "name": "Halt the Invasion (Minmatar Republic)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "66",  "name": "Hidden Hope", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "67",  "name": "Humble Beginnings", "color": "bg-white", "guide": "", "resist": ["x"], "ammo": [], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "68",  "name": "Illegal Activity", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "69",  "name": "In The Midst of Deadspace", "color": "bg-white", "guide": "", "resist": ["em","kin","therm"], "ammo": ["em","kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "70",  "name": "The Infested Ruins", "color": "bg-white", "guide": "", "resist": ["em"], "ammo": ["em"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "71",  "name": "Infiltrated Outposts", "color": "bg-white", "guide": "", "resist": ["em"], "ammo": ["em"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "72",  "name": "Innocents In The Crossfire", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "73",  "name": "Insorum Hijacking", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "74",  "name": "Inspired", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "75",  "name": "Intercept The Saboteurs (Amarr)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "76",  "name": "Intercept The Saboteurs (Blood Raiders)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "77",  "name": "Intercept The Saboteurs (Guristas Pirates)", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "78",  "name": "Intercept The Saboteurs (Minmatar Republic)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "79",  "name": "Intercept The Saboteurs (Serpentis & Sansha's Nation)", "color": "bg-white", "guide": "", "resist": ["em","kin","therm"], "ammo": ["em","kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "80",  "name": "Jealous Rivals", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "81",  "name": "Khanid Nobleman", "color": "bg-white", "guide": "", "resist": ["em","kin","therm"], "ammo": ["em","kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "82",  "name": "The Kidnapping", "color": "bg-white", "guide": "", "resist": ["em","kin","therm"], "ammo": ["em","kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "83",  "name": "Lamb Amongst Lions", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "84",  "name": "Massive Attack (Amarr)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "85",  "name": "Massive Attack (Minmatar Republic)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "86",  "name": "Massive Attack (Sansha's Nation)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "87",  "name": "Massive Attack (Serpentis)", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "88",  "name": "Matriarch", "color": "bg-white", "guide": "", "resist": ["em","kin","exp","therm"], "ammo": ["em","kin","exp","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "89",  "name": "Mining Misappropriation", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "90",  "name": "Missing Persons Report", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "91",  "name": "The Mordus Headhunters", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "92",  "name": "Mordus Folly", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "93",  "name": "The Mouthy Merc", "color": "bg-white", "guide": "", "resist": ["exp","kin","therm"], "ammo": ["exp","kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "94",  "name": "Navy Armada (Amarr)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "95",  "name": "Navy Armada (Caldari)", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "96",  "name": "Navy Armada (Gallente Federation)", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "97",  "name": "Nine Tenths Of The Wormhole", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "98",  "name": "Patient Zero", "color": "bg-white", "guide": "", "resist": ["em"], "ammo": ["em"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "99",  "name": "Persistent Enemy", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "100", "name": "Pirate Business (Amarr)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "101", "name": "Pirate Business (Minmatar Republic)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "102", "name": "Pirate Invasion (Angel Cartel)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "103", "name": "Pirate Invasion (Sansha's Nation)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "104", "name": "Pirate Slaughter (Angel Cartel)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "105", "name": "Pirate Slaughter (Guristas Pirates)", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "106", "name": "Police Invasion (Minmatar Republic)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "107", "name": "Postmodern Primitives", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "108", "name": "Pot and Kettle", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "109", "name": "Quota Season", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "110", "name": "Recon (Angel Cartel)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "111", "name": "Recon (Blood Raiders)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "112", "name": "Recon (Guristas Pirates)", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "113", "name": "Recon (Sansha's Nation)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "114", "name": "Recon (Serpentis)", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "115", "name": "Record Cleaning", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "116", "name": "Ritualist Raids", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "117", "name": "Rogue Drone Harassment", "color": "bg-white", "guide": "", "resist": ["em"], "ammo": ["em"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "118", "name": "The Rogue Slave Trader (Sansha's Nation) (1 of 2)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "119", "name": "The Sansha Spies", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "120", "name": "The Score (Ammatar Mandate)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "121", "name": "The Score (Minmatar Republic)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "122", "name": "The Score (Sansha's Nation)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "123", "name": "The Score (Serpentis)", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "124", "name": "Serpent And The Slaves", "color": "bg-white", "guide": "", "resist": ["em","kin","therm"], "ammo": ["em","kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "125", "name": "Serpentis Extravaganza", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "126", "name": "Serpentis Ship Builders", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "127", "name": "The Serpentis Spies", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "128", "name": "Shades of Grey", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "129", "name": "Shipyard Theft (Angel Cartel)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "130", "name": "Shipyard Theft (Blood Raiders)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "131", "name": "Shipyard Theft (Guristas Pirates)", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "132", "name": "Shipyard Theft (Serpentis)", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "133", "name": "Smash The Supplier", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "134", "name": "Smash The Shipyard", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "135", "name": "Smuggler Interception (Angel Cartel)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "136", "name": "Smuggler Interception (Blood Raiders)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "137", "name": "Soothe The Salvage Beast", "color": "bg-white", "guide": "", "resist": ["em"], "ammo": ["em"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "138", "name": "Stem The Flow", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "139", "name": "Stop the Thief", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "140", "name": "Surprise Surprise (Amarr & Caldari)", "color": "bg-white", "guide": "", "resist": ["em","kin","therm"], "ammo": ["em","kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "141", "name": "Surprise Surprise (Minmatar Republic & Gallente Federation)", "color": "bg-white", "guide": "", "resist": ["exp","kin","therm"], "ammo": ["exp","kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "142", "name": "Tomb Of The Unknown Soldiers", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "143", "name": "Unauthorized Military Presence (Angel Cartel)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "144", "name": "Unauthorized Military Presence (Blood Raiders)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "145", "name": "Unauthorized Military Presence (Caldari)", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "146", "name": "Unauthorized Military Presence (Gallente Federation)", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "147", "name": "Under Suspicion", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "148", "name": "Vengeance (Angel Cartel)", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "149", "name": "Vengeance (Blood Raiders)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "150", "name": "Vengeance (Guristas Pirates)", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "151", "name": "Vengeance (Mordus)", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "152", "name": "Vengeance (Sansha's Nation)", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "153", "name": "Vengeance (Serpentis)", "color": "bg-white", "guide": "", "resist": ["therm","kin"], "ammo": ["therm","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "154", "name": "War Situation", "color": "bg-white", "guide": "", "resist": ["em","therm"], "ammo": ["em","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "155", "name": "Warlord Strikes", "color": "bg-white", "guide": "", "resist": ["exp","kin"], "ammo": ["exp","kin"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "156", "name": "The Wildcat Strike", "color": "bg-white", "guide": "", "resist": ["em"], "ammo": ["em"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "157", "name": "Worlds Collide (Angel Cartel & Sansha's Nation)", "color": "bg-white", "guide": "", "resist": ["em","kin","exp","therm"], "ammo": ["em","kin","exp","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "158", "name": "Worlds Collide (Blood Raiders & Angel Cartel)", "color": "bg-white", "guide": "", "resist": ["em","kin","exp","therm"], "ammo": ["em","kin","exp","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "159", "name": "Worlds Collide (Gallente Federation & Sansha's Nation)", "color": "bg-white", "guide": "", "resist": ["em","kin","therm"], "ammo": ["em","kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "160", "name": "Worlds Collide (Guristas Pirates & Serpentis)", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" },
-    { "id": "161", "name": "Worlds Collide (Serpentis & Guristas Pirates)", "color": "bg-white", "guide": "", "resist": ["kin","therm"], "ammo": ["kin","therm"], "ab": "no", "tags": [], "profit": "", "choice": false, "tank": "", "loot": "" }
+    {
+        "id": "13",
+        "name": "Amarr Excavators",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em",
+            "therm"
+        ],
+        "ammo": [
+            "em",
+            "therm"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "14",
+        "name": "Ambush the Convoy (Blood Raiders)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em",
+            "therm"
+        ],
+        "ammo": [
+            "em",
+            "therm"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "15",
+        "name": "Ambush the Convoy (Serpentis)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "16",
+        "name": "An Advantageous Catastrophe",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "therm"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "17",
+        "name": "The Angel Cartel Spies",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "18",
+        "name": "Angel Extravaganza",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "19",
+        "name": "The Anomaly",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [],
+        "ammo": [],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "20",
+        "name": "Are You Receiving?",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "21",
+        "name": "The Assault (Guristas Pirates)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "22",
+        "name": "The Assault (Minmatar Republic)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "23",
+        "name": "The Assault (Serpentis)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "24",
+        "name": "Attack of the Drones",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm",
+            "kin",
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "25",
+        "name": "The Blockade (Angel Cartel)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "26",
+        "name": "The Blockade (Blood Raiders)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "27",
+        "name": "The Blockade (DED)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm",
+            "em"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "28",
+        "name": "The Blockade (Sansha's Nation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "29",
+        "name": "The Blockade (Serpentis)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "30",
+        "name": "The Blood of Angry Men",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em",
+            "exp"
+        ],
+        "ammo": [
+            "exp",
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "31",
+        "name": "Blood Farm",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "32",
+        "name": "The Blood Raider Spies",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "33",
+        "name": "Buzz Kill",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "34",
+        "name": "Cargo Delivery (Blood Raiders)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "35",
+        "name": "Cargo Delivery (Sansha's Nation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "36",
+        "name": "Cargo Delivery (Serpentis)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "37",
+        "name": "Covering your Tracks",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [],
+        "ammo": [],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "38",
+        "name": "Crowd Control",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "39",
+        "name": "The Damsel in Distress",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "40",
+        "name": "Desperate Maneuvers",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm",
+            "kin",
+            "em"
+        ],
+        "ammo": [
+            "kin",
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "41",
+        "name": "Diplomatic Incident",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "42",
+        "name": "Dissidents",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "43",
+        "name": "Downing The Slavers (2 of 2) (Sansha's Nation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "44",
+        "name": "Dread Pirate Scarlet",
+        "color": "bg-blue",
+        "guide": "Take gate key, skip every room, all gates are open. last room kill named npc, done",
+        "resist": [
+            "em",
+            "kin",
+            "exp",
+            "therm"
+        ],
+        "ammo": [
+            "em",
+            "kin",
+            "exp",
+            "therm"
+        ],
+        "ab": "yes",
+        "tags": [
+            "BLITZ",
+            "FAST"
+        ],
+        "profit": "",
+        "choice": true,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "45",
+        "name": "Duo of Death (Angel Cartel)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "46",
+        "name": "Duo of Death (Blood Raiders)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "47",
+        "name": "Duo of Death (Guristas Pirates)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "48",
+        "name": "Duo of Death (Sansha's Nation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "49",
+        "name": "Duo of Death (Serpentis)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "50",
+        "name": "An End to Eavesdropping",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "51",
+        "name": "Enemies Abound",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "52",
+        "name": "Evolution",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "53",
+        "name": "Exploited Sensitivities",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "54",
+        "name": "Extract The Renegade",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "55",
+        "name": "Federal Confidence",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "56",
+        "name": "Feeding Frenzy",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "57",
+        "name": "Foil The Military Preparations (Caldari)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "58",
+        "name": "Foil The Military Preparations (Gallente Federation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "59",
+        "name": "Forgotten Outpost",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "60",
+        "name": "Gate to Nowhere",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "61",
+        "name": "Gone Berserk",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "62",
+        "name": "Guristas Extravaganza",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "63",
+        "name": "The Guristas Spies",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "64",
+        "name": "Halt the Invasion (Amarr)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "65",
+        "name": "Halt the Invasion (Minmatar Republic)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "66",
+        "name": "Hidden Hope",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "67",
+        "name": "Humble Beginnings",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [],
+        "ammo": [],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "68",
+        "name": "Illegal Activity",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "69",
+        "name": "In The Midst of Deadspace",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em",
+            "kin"
+        ],
+        "ammo": [
+            "em",
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "70",
+        "name": "The Infested Ruins",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "71",
+        "name": "Infiltrated Outposts",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "72",
+        "name": "Innocents In The Crossfire",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "73",
+        "name": "Insorum Hijacking",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "74",
+        "name": "Inspired",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin",
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "75",
+        "name": "Intercept The Saboteurs (Amarr)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "76",
+        "name": "Intercept The Saboteurs (Blood Raiders)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "77",
+        "name": "Intercept The Saboteurs (Guristas Pirates)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "78",
+        "name": "Intercept The Saboteurs (Minmatar Republic)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "79",
+        "name": "Intercept The Saboteurs (Serpentis & Sansha's Nation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "80",
+        "name": "Jealous Rivals",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "81",
+        "name": "Khanid Nobleman",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "82",
+        "name": "The Kidnapping",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "83",
+        "name": "Lamb Amongst Lions",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "84",
+        "name": "Massive Attack (Amarr)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "85",
+        "name": "Massive Attack (Minmatar Republic)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin",
+            "therm"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "86",
+        "name": "Massive Attack (Sansha's Nation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "87",
+        "name": "Massive Attack (Serpentis)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "88",
+        "name": "Matriarch",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em",
+            "therm"
+        ],
+        "ammo": [
+            "exp",
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "89",
+        "name": "Mining Misappropriation",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "90",
+        "name": "Missing Persons Report",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "91",
+        "name": "The Mordus Headhunters",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "92",
+        "name": "Mordus Folly",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "93",
+        "name": "The Mouthy Merc",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em",
+            "kin"
+        ],
+        "ammo": [
+            "kin",
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "94",
+        "name": "Navy Armada (Amarr)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "95",
+        "name": "Navy Armada (Caldari)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "96",
+        "name": "Navy Armada (Gallente Federation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "97",
+        "name": "Nine Tenths Of The Wormhole",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "98",
+        "name": "Patient Zero",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "99",
+        "name": "Persistent Enemy",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "100",
+        "name": "Pirate Business (Amarr)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "101",
+        "name": "Pirate Business (Minmatar Republic)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "102",
+        "name": "Pirate Invasion (Angel Cartel)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "103",
+        "name": "Pirate Invasion (Sansha's Nation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "104",
+        "name": "Pirate Slaughter (Angel Cartel)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "105",
+        "name": "Pirate Slaughter (Guristas Pirates)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "106",
+        "name": "Police Invasion (Minmatar Republic)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "107",
+        "name": "Postmodern Primitives",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "108",
+        "name": "Pot and Kettle",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "109",
+        "name": "Quota Season",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "110",
+        "name": "Recon (Angel Cartel)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm",
+            "em",
+            "kin"
+        ],
+        "ammo": [
+            "exp",
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "111",
+        "name": "Recon (Blood Raiders)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em",
+            "kin"
+        ],
+        "ammo": [
+            "em",
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "112",
+        "name": "Recon (Guristas Pirates)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin",
+            "em"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "113",
+        "name": "Recon (Sansha's Nation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em",
+            "kin"
+        ],
+        "ammo": [
+            "em",
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "114",
+        "name": "Recon (Serpentis)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm",
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "115",
+        "name": "Record Cleaning",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "116",
+        "name": "Ritualist Raids",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "117",
+        "name": "Rogue Drone Harassment",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp",
+            "kin"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "118",
+        "name": "The Rogue Slave Trader (Sansha's Nation) (1 of 2)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "119",
+        "name": "The Sansha Spies",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "120",
+        "name": "The Score (Ammatar Mandate)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "121",
+        "name": "The Score (Minmatar Republic)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "122",
+        "name": "The Score (Sansha's Nation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "123",
+        "name": "The Score (Serpentis)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "124",
+        "name": "Serpent And The Slaves",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm",
+            "em"
+        ],
+        "ammo": [
+            "em",
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "125",
+        "name": "Serpentis Extravaganza",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "126",
+        "name": "Serpentis Ship Builders",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "127",
+        "name": "The Serpentis Spies",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "128",
+        "name": "Shades of Grey",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "129",
+        "name": "Shipyard Theft (Angel Cartel)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "130",
+        "name": "Shipyard Theft (Blood Raiders)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "131",
+        "name": "Shipyard Theft (Guristas Pirates)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "132",
+        "name": "Shipyard Theft (Serpentis)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "133",
+        "name": "Smash The Supplier",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "134",
+        "name": "Smash The Shipyard",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "135",
+        "name": "Smuggler Interception (Angel Cartel)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "136",
+        "name": "Smuggler Interception (Blood Raiders)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "137",
+        "name": "Soothe The Salvage Beast",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em",
+            "therm"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "138",
+        "name": "Stem The Flow",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "139",
+        "name": "Stop the Thief",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "140",
+        "name": "Surprise Surprise (Amarr & Caldari)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em",
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "141",
+        "name": "Surprise Surprise (Minmatar Republic & Gallente Federation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [],
+        "ammo": [],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "142",
+        "name": "Tomb Of The Unknown Soldiers",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "143",
+        "name": "Unauthorized Military Presence (Angel Cartel)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "144",
+        "name": "Unauthorized Military Presence (Blood Raiders)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "145",
+        "name": "Unauthorized Military Presence (Caldari)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "146",
+        "name": "Unauthorized Military Presence (Gallente Federation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "147",
+        "name": "Under Suspicion",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "148",
+        "name": "Vengeance (Angel Cartel)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "149",
+        "name": "Vengeance (Blood Raiders)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "150",
+        "name": "Vengeance (Guristas Pirates)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "151",
+        "name": "Vengeance (Mordus)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "152",
+        "name": "Vengeance (Sansha's Nation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "153",
+        "name": "Vengeance (Serpentis)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "154",
+        "name": "War Situation",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "155",
+        "name": "Warlord Strikes",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "156",
+        "name": "The Wildcat Strike",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp"
+        ],
+        "ammo": [
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "157",
+        "name": "Worlds Collide (Angel Cartel & Sansha's Nation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp",
+            "em"
+        ],
+        "ammo": [
+            "em",
+            "exp"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "158",
+        "name": "Worlds Collide (Blood Raiders & Angel Cartel)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "exp",
+            "em"
+        ],
+        "ammo": [
+            "exp",
+            "em"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "159",
+        "name": "Worlds Collide (Gallente Federation & Sansha's Nation)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "em",
+            "kin"
+        ],
+        "ammo": [
+            "em",
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "160",
+        "name": "Worlds Collide (Guristas Pirates & Serpentis)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin",
+            "therm"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    },
+    {
+        "id": "161",
+        "name": "Worlds Collide (Serpentis & Guristas Pirates)",
+        "color": "bg-white",
+        "guide": "",
+        "resist": [
+            "kin"
+        ],
+        "ammo": [
+            "kin"
+        ],
+        "ab": "no",
+        "tags": [],
+        "profit": "",
+        "choice": false,
+        "tank": "",
+        "loot": ""
+    }
 ]

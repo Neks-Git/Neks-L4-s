@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mission Editor — Toggle Resist / Ammo</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg0: #090b11; --bg1: #0d1017; --bg2: #121620; --bg3: #1a1f2c;
+    --border: rgba(148,163,184,0.10);
+    --border-strong: rgba(148,163,184,0.22);
+    --text0: #e9edf4; --text1: #8992a6; --text2: #4d5568;
+    --coral: #e8917a;
+    --em: #5b8fee; --kin: #7b8494; --exp: #e8917a; --therm: #db6153;
+    --green: #57c98a; --red: #db6153;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    padding: 24px 32px 80px;
+    background: radial-gradient(900px 400px at 10% -10%, rgba(232,145,122,0.05), transparent 60%), var(--bg0);
+    color: var(--text0);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  h1 { font-family: 'Rajdhani', sans-serif; font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+  .sub { color: var(--text2); font-size: 11.5px; margin-bottom: 20px; }
+
+  .bar {
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    position: sticky; top: 0; z-index: 10;
+  }
+  button {
+    background: var(--bg3);
+    color: var(--text0);
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    padding: 7px 14px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 13px; font-weight: 600; letter-spacing: 0.03em;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  button:hover { background: #232a3a; border-color: var(--coral); }
+  button.primary { background: rgba(232,145,122,0.15); border-color: var(--coral); color: var(--coral); }
+  button.primary:hover { background: rgba(232,145,122,0.25); }
+  button.primary.dirty {
+    background: rgba(232,145,122,0.30);
+    box-shadow: 0 0 0 2px rgba(232,145,122,0.18);
+    animation: pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 2px rgba(232,145,122,0.18); }
+    50%      { box-shadow: 0 0 0 5px rgba(232,145,122,0.05); }
+  }
+  button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  input[type="search"] {
+    background: var(--bg1); border: 1px solid var(--border-strong); border-radius: 6px;
+    padding: 7px 11px; color: var(--text0); font-family: inherit; font-size: 12.5px;
+    outline: none; width: 260px;
+  }
+  input:focus { border-color: var(--coral); }
+
+  .status { margin-left: auto; font-size: 11px; color: var(--text1); }
+  .status.ok  { color: var(--green); }
+  .status.err { color: var(--red); }
+  .status.dirty { color: var(--coral); }
+
+  .dirty-dot {
+    display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+    background: var(--coral); margin-right: 6px; vertical-align: middle;
+    box-shadow: 0 0 8px var(--coral);
+  }
+
+  table {
+    width: 100%; border-collapse: separate; border-spacing: 0;
+    background: var(--bg1); border-radius: 10px; overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  th, td { padding: 8px 10px; text-align: left; vertical-align: middle; }
+  th {
+    background: var(--bg2); color: var(--text2);
+    font-size: 10.5px; font-weight: 600; letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border-strong);
+  }
+  tbody tr { border-bottom: 1px solid var(--border); }
+  tbody tr:hover { background: rgba(255,255,255,0.02); }
+  tbody tr:last-child { border-bottom: none; }
+
+  .name { font-weight: 600; font-size: 12.5px; }
+  .id { color: var(--text2); font-size: 10.5px; margin-right: 8px; }
+
+  .chk-group { display: flex; gap: 4px; }
+  .chk {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 3px 8px; border-radius: 5px;
+    background: var(--bg3); border: 1px solid transparent;
+    font-size: 10px; font-weight: 600; letter-spacing: 0.05em;
+    cursor: pointer; user-select: none;
+    transition: all 0.1s;
+    color: var(--text2);
+  }
+  .chk:hover { border-color: var(--border-strong); }
+  .chk input { display: none; }
+  .chk.checked { background: rgba(255,255,255,0.06); color: var(--text0); }
+  .chk.checked[data-type="em"]    { color: var(--em);    border-color: var(--em); }
+  .chk.checked[data-type="kin"]   { color: var(--kin);   border-color: var(--kin); }
+  .chk.checked[data-type="exp"]   { color: var(--exp);   border-color: var(--exp); }
+  .chk.checked[data-type="therm"] { color: var(--therm); border-color: var(--therm); }
+
+  .col-resist { width: 240px; }
+  .col-ammo   { width: 240px; }
+
+  .row-count { color: var(--text2); font-size: 11px; margin-top: 12px; }
+</style>
+</head>
+<body>
+
+  <h1>Mission Editor</h1>
+  <div class="sub">Click checkboxes to toggle. When you're done, press <strong>Save</strong> (or Ctrl+S).</div>
+
+  <div class="bar">
+    <button id="load-btn">Load JSON…</button>
+    <button id="save-btn" class="primary" disabled>Save</button>
+    <input type="search" id="search" placeholder="Filter missions…">
+    <span class="status" id="status">No file loaded</span>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Mission</th>
+        <th class="col-resist">Resistances</th>
+        <th class="col-ammo">Ammo</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      <tr><td colspan="3" style="color: var(--text2); text-align: center; padding: 30px;">Load a JSON file to begin</td></tr>
+    </tbody>
+  </table>
+
+  <div class="row-count" id="row-count"></div>
+
+<script>
+  const TYPES = ['em', 'kin', 'exp', 'therm'];
+  let missions = [];
+  let fileHandle = null;
+  let isDirty = false;
+
+  const $ = id => document.getElementById(id);
+  const tbody = $('tbody');
+  const statusEl = $('status');
+  const searchEl = $('search');
+  const rowCountEl = $('row-count');
+  const saveBtn = $('save-btn');
+  const loadBtn = $('load-btn');
+
+  function setStatus(text, cls = '') {
+    statusEl.textContent = text;
+    statusEl.className = 'status ' + cls;
+  }
+
+  function markDirty() {
+    if (isDirty) return;
+    isDirty = true;
+    saveBtn.classList.add('dirty');
+    saveBtn.textContent = 'Save •';
+    setStatus('Unsaved changes', 'dirty');
+  }
+
+  function markClean(msg = 'Saved ✓') {
+    isDirty = false;
+    saveBtn.classList.remove('dirty');
+    saveBtn.textContent = 'Save';
+    setStatus(msg, 'ok');
+  }
+
+  /* ---------- Load ---------- */
+
+  async function loadFile() {
+    if (window.showOpenFilePicker) {
+      try {
+        [fileHandle] = await window.showOpenFilePicker({
+          types: [{ description: 'JSON', accept: { 'application/json': ['.json'] } }]
+        });
+        const file = await fileHandle.getFile();
+        await readFile(file);
+        saveBtn.disabled = false;
+        markClean('Loaded: ' + file.name);
+      } catch (e) {
+        if (e.name !== 'AbortError') setStatus('Load failed: ' + e.message, 'err');
+      }
+    } else {
+      // Fallback for Firefox / Safari — file picker + download on save
+      const input = document.createElement('input');
+      input.type = 'file';
+      input.accept = '.json,application/json';
+      input.onchange = async () => {
+        if (!input.files[0]) return;
+        await readFile(input.files[0]);
+        fileHandle = null;      // no write handle available
+        saveBtn.disabled = false;
+        markClean('Loaded: ' + input.files[0].name + ' (download mode)');
+      };
+      input.click();
+    }
+  }
+
+  async function readFile(file) {
+    const text = await file.text();
+    missions = JSON.parse(text);
+    for (const m of missions) {
+      if (!Array.isArray(m.resist)) m.resist = [];
+      if (!Array.isArray(m.ammo))   m.ammo   = [];
+      m.resist = m.resist.filter(t => t !== 'x');
+      m.ammo   = m.ammo.filter(t => t !== 'x');
+    }
+    render();
+  }
+
+  /* ---------- Render ---------- */
+
+  function render() {
+    const q = searchEl.value.trim().toLowerCase();
+    const list = q ? missions.filter(m => m.name.toLowerCase().includes(q)) : missions;
+
+    if (!list.length) {
+      tbody.innerHTML = '<tr><td colspan="3" style="color: var(--text2); text-align: center; padding: 30px;">No missions match.</td></tr>';
+      rowCountEl.textContent = '';
+      return;
+    }
+
+    tbody.innerHTML = list.map(m => {
+      const idx = missions.indexOf(m);
+      return `
+        <tr>
+          <td><span class="id">#${escapeHtml(m.id)}</span><span class="name">${escapeHtml(m.name)}</span></td>
+          <td>${renderChecks(idx, 'resist', m.resist)}</td>
+          <td>${renderChecks(idx, 'ammo',   m.ammo)}</td>
+        </tr>
+      `;
+    }).join('');
+
+    rowCountEl.textContent = `${list.length} / ${missions.length} missions shown`;
+  }
+
+  function renderChecks(idx, field, values) {
+    const set = new Set(values.map(v => v.toLowerCase()));
+    return `<div class="chk-group">` + TYPES.map(t => {
+      const on = set.has(t);
+      return `<label class="chk${on ? ' checked' : ''}" data-type="${t}">
+        <input type="checkbox" ${on ? 'checked' : ''}
+          onchange="toggle(${idx}, '${field}', '${t}', this.checked)">
+        ${t.toUpperCase()}
+      </label>`;
+    }).join('') + `</div>`;
+  }
+
+  /* ---------- Toggle (no auto-save) ---------- */
+
+  window.toggle = function(idx, field, type, checked) {
+    const m = missions[idx];
+    const arr = m[field];
+    const pos = arr.findIndex(v => v.toLowerCase() === type);
+    if (checked && pos === -1) arr.push(type);
+    if (!checked && pos !== -1) arr.splice(pos, 1);
+
+    // update the chip visual
+    const label = event.target.closest('.chk');
+    label.classList.toggle('checked', checked);
+
+    markDirty();
+  };
+
+  /* ---------- Manual Save ---------- */
+
+  async function saveNow() {
+    if (!missions.length) return;
+    const text = JSON.stringify(missions, null, 4);
+
+    if (fileHandle) {
+      try {
+        const writable = await fileHandle.createWritable();
+        await writable.write(text);
+        await writable.close();
+        markClean('Saved ✓ ' + new Date().toLocaleTimeString());
+      } catch (e) {
+        setStatus('Save failed: ' + e.message, 'err');
+      }
+    } else {
+      // Fallback: download (Firefox / Safari)
+      const blob = new Blob([text], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'eve_missions.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      markClean('Downloaded — replace your file');
+    }
+  }
+
+  /* ---------- Wire-up ---------- */
+
+  loadBtn.addEventListener('click', loadFile);
+  saveBtn.addEventListener('click', saveNow);
+  searchEl.addEventListener('input', render);
+
+  // Ctrl+S = save
+  document.addEventListener('keydown', e => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
+      e.preventDefault();
+      if (!saveBtn.disabled) saveNow();
+    }
+  });
+
+  // Warn before leaving if there are unsaved changes
+  window.addEventListener('beforeunload', e => {
+    if (isDirty) {
+      e.preventDefault();
+      e.returnValue = '';
+    }
+  });
+
+  function escapeHtml(s) {
+    const d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  /* ---------- Preview (read-only) ---------- */
+
+  fetch('./eve_missions.json', { cache: 'no-store' })
+    .then(r => r.ok ? r.json() : null)
+    .then(data => {
+      if (data && !missions.length) {
+        missions = data;
+        for (const m of missions) {
+          if (!Array.isArray(m.resist)) m.resist = [];
+          if (!Array.isArray(m.ammo))   m.ammo   = [];
+          m.resist = m.resist.filter(t => t !== 'x');
+          m.ammo   = m.ammo.filter(t => t !== 'x');
+        }
+        render();
+        setStatus('Preview only — click "Load JSON…" to edit & save');
+        // Save button stays disabled in preview-only mode
+      }
+    })
+    .catch(() => {});
+</script>
+
+</body>
+</html>
