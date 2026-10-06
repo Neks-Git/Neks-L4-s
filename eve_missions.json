@@ -20,9 +20,12 @@
     {
         "id": "2",
         "name": "Silence the informant",
-        "color": "bg-white",
-        "guide": "drop mtu at start, kill elite drones for loot",
-        "resist": [],
+        "color": "bg-yellow",
+        "guide": "drop mtu at start, kill elite drones for loot. Blitz: You have to kill everything except the sentries. In third room snipe and kill the lone cruiser. Warp out.",
+        "resist": [
+            "em",
+            "kin"
+        ],
         "ammo": [
             "em",
             "kin"
@@ -30,7 +33,7 @@
         "ab": "no",
         "tags": [],
         "profit": "",
-        "choice": false,
+        "choice": true,
         "tank": "",
         "loot": ""
     },
@@ -53,16 +56,18 @@
     {
         "id": "4",
         "name": "gone berserk",
-        "color": "bg-yellow",
-        "guide": "Kill everything",
+        "color": "bg-blue",
+        "guide": "single pocket, kill everything",
         "resist": [],
         "ammo": [
             "kin"
         ],
         "ab": "no",
-        "tags": [],
+        "tags": [
+            "FAST"
+        ],
         "profit": "",
-        "choice": false,
+        "choice": true,
         "tank": "",
         "loot": ""
     },
@@ -138,7 +143,7 @@
         "id": "9",
         "name": "Stop the Thief FAST",
         "color": "bg-blue",
-        "guide": "Align home, Kill close overlord, kill shadow port out",
+        "guide": "Align home, Kill close overlord, kill shadow port out\nKilling overlord will spawn an add wave top of you, dmg can be high if not tanky, i recomend playing trough it fully enough to know if u can survive.",
         "resist": [],
         "ammo": [
             "exp"
@@ -347,18 +352,20 @@
     {
         "id": "21",
         "name": "The Assault (Guristas Pirates)",
-        "color": "bg-white",
-        "guide": "",
+        "color": "bg-yellow",
+        "guide": "Blitz: In the first pocket, ignore all hostile targets and activate the acceleration gate. Clear the second pocket completely.",
         "resist": [
             "kin"
         ],
         "ammo": [
             "kin"
         ],
-        "ab": "no",
-        "tags": [],
+        "ab": "yes",
+        "tags": [
+            "BLITZ"
+        ],
         "profit": "",
-        "choice": false,
+        "choice": true,
         "tank": "",
         "loot": ""
     },
@@ -2108,7 +2115,8 @@
             "kin"
         ],
         "ammo": [
-            "em"
+            "em",
+            "therm"
         ],
         "ab": "no",
         "tags": [],
@@ -2804,8 +2812,8 @@
     {
         "id": "156",
         "name": "The Wildcat Strike",
-        "color": "bg-white",
-        "guide": "",
+        "color": "bg-yellow",
+        "guide": " Destroy ships at warp-in, take acceleration gate no kills necessary in the room.",
         "resist": [
             "exp"
         ],
@@ -2813,11 +2821,14 @@
             "em"
         ],
         "ab": "no",
-        "tags": [],
+        "tags": [
+            "BLITZ",
+            "FAST"
+        ],
         "profit": "",
-        "choice": false,
+        "choice": true,
         "tank": "",
-        "loot": ""
+        "loot": "Elite drones drop loot worth few M"
     },
     {
         "id": "157",
